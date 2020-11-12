@@ -15,6 +15,7 @@
 		E4318AC6255DC6D900DC0B4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4318AC4255DC6D900DC0B4B /* LaunchScreen.storyboard */; };
 		E4318AD1255DCB4600DC0B4B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4318AD0255DCB4600DC0B4B /* LoginViewController.swift */; };
 		E4318AD3255DCB5000DC0B4B /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4318AD2255DCB5000DC0B4B /* FeedViewController.swift */; };
+		E4318AD5255DD2E700DC0B4B /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4318AD4255DD2E700DC0B4B /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E4318AC7255DC6D900DC0B4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4318AD0255DCB4600DC0B4B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E4318AD2255DCB5000DC0B4B /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		E4318AD4255DD2E700DC0B4B /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			children = (
 				E4318AD0255DCB4600DC0B4B /* LoginViewController.swift */,
 				E4318AD2255DCB5000DC0B4B /* FeedViewController.swift */,
+				E4318AD4255DD2E700DC0B4B /* CameraViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4318AD1255DCB4600DC0B4B /* LoginViewController.swift in Sources */,
+				E4318AD5255DD2E700DC0B4B /* CameraViewController.swift in Sources */,
 				E4318ABA255DC6D700DC0B4B /* AppDelegate.swift in Sources */,
 				E4318AD3255DCB5000DC0B4B /* FeedViewController.swift in Sources */,
 				E4318ABC255DC6D700DC0B4B /* SceneDelegate.swift in Sources */,
