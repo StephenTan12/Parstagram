@@ -10,10 +10,11 @@
 		C8F6DB8633F4E87446E0048C /* Pods_Parstagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE5E8768D1C66D3F380DB63 /* Pods_Parstagram.framework */; };
 		E4318ABA255DC6D700DC0B4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4318AB9255DC6D700DC0B4B /* AppDelegate.swift */; };
 		E4318ABC255DC6D700DC0B4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4318ABB255DC6D700DC0B4B /* SceneDelegate.swift */; };
-		E4318ABE255DC6D700DC0B4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4318ABD255DC6D700DC0B4B /* ViewController.swift */; };
 		E4318AC1255DC6D700DC0B4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4318ABF255DC6D700DC0B4B /* Main.storyboard */; };
 		E4318AC3255DC6D900DC0B4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4318AC2255DC6D900DC0B4B /* Assets.xcassets */; };
 		E4318AC6255DC6D900DC0B4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4318AC4255DC6D900DC0B4B /* LaunchScreen.storyboard */; };
+		E4318AD1255DCB4600DC0B4B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4318AD0255DCB4600DC0B4B /* LoginViewController.swift */; };
+		E4318AD3255DCB5000DC0B4B /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4318AD2255DCB5000DC0B4B /* FeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,11 +24,12 @@
 		E4318AB6255DC6D700DC0B4B /* Parstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4318AB9255DC6D700DC0B4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4318ABB255DC6D700DC0B4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E4318ABD255DC6D700DC0B4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E4318AC0255DC6D700DC0B4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E4318AC2255DC6D900DC0B4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4318AC5255DC6D900DC0B4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4318AC7255DC6D900DC0B4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4318AD0255DCB4600DC0B4B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E4318AD2255DCB5000DC0B4B /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +112,8 @@
 		E4318ACF255DC86200DC0B4B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E4318ABD255DC6D700DC0B4B /* ViewController.swift */,
+				E4318AD0255DCB4600DC0B4B /* LoginViewController.swift */,
+				E4318AD2255DCB5000DC0B4B /* FeedViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -230,8 +233,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4318ABE255DC6D700DC0B4B /* ViewController.swift in Sources */,
+				E4318AD1255DCB4600DC0B4B /* LoginViewController.swift in Sources */,
 				E4318ABA255DC6D700DC0B4B /* AppDelegate.swift in Sources */,
+				E4318AD3255DCB5000DC0B4B /* FeedViewController.swift in Sources */,
 				E4318ABC255DC6D700DC0B4B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
