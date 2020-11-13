@@ -33,7 +33,7 @@
 		E4318AD0255DCB4600DC0B4B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E4318AD2255DCB5000DC0B4B /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		E4318AD4255DD2E700DC0B4B /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
-		E4318AD6255DDD5500DC0B4B /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostTableViewCell.swift; path = Storyboards/PostTableViewCell.swift; sourceTree = "<group>"; };
+		E4318AD6255DDD5500DC0B4B /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +86,7 @@
 		E4318AB8255DC6D700DC0B4B /* Parstagram */ = {
 			isa = PBXGroup;
 			children = (
-				E4318AD6255DDD5500DC0B4B /* PostTableViewCell.swift */,
+				E4318AD8255F396E00DC0B4B /* Cells */,
 				E4318ACD255DC82900DC0B4B /* Delegates */,
 				E4318ACE255DC84700DC0B4B /* Storyboards */,
 				E4318ACF255DC86200DC0B4B /* Controllers */,
@@ -122,6 +122,14 @@
 				E4318AD4255DD2E700DC0B4B /* CameraViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E4318AD8255F396E00DC0B4B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E4318AD6255DDD5500DC0B4B /* PostTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

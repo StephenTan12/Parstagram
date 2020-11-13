@@ -35,10 +35,13 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a7Q-aa-kep">
                                 <rect key="frame" x="30" y="335" width="354" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGk-Lb-Ob4">
-                                <rect key="frame" x="60" y="389" width="56" height="33"/>
+                                <rect key="frame" x="60" y="389" width="75" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="MUX-0w-IUF"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <state key="normal" title="Sign In">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -63,13 +66,14 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="wYT-N2-sPY" firstAttribute="width" secondItem="BGk-Lb-Ob4" secondAttribute="width" multiplier="1.14286" id="2Z3-El-IHQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ciu-BM-h73" secondAttribute="trailing" symbolic="YES" id="1YA-dL-qRX"/>
+                            <constraint firstItem="wYT-N2-sPY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BGk-Lb-Ob4" secondAttribute="trailing" constant="8" symbolic="YES" id="29r-Mp-jn9"/>
                             <constraint firstItem="BGk-Lb-Ob4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="3lS-3r-Wa9"/>
-                            <constraint firstItem="wYT-N2-sPY" firstAttribute="leading" secondItem="BGk-Lb-Ob4" secondAttribute="trailing" constant="174" id="IFi-Hs-yL6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BWe-UF-Lxk" secondAttribute="trailing" constant="30" id="MAg-iB-i5k"/>
                             <constraint firstItem="BWe-UF-Lxk" firstAttribute="top" secondItem="Nyq-oq-htM" secondAttribute="bottom" constant="10" id="Mse-yi-BtB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a7Q-aa-kep" secondAttribute="trailing" constant="30" id="Nba-v9-Dm8"/>
                             <constraint firstItem="BWe-UF-Lxk" firstAttribute="leading" secondItem="Nyq-oq-htM" secondAttribute="leading" id="Pg5-4M-Qjy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Nyq-oq-htM" secondAttribute="trailing" symbolic="YES" id="TOb-RZ-yFW"/>
                             <constraint firstItem="Nyq-oq-htM" firstAttribute="top" secondItem="9kQ-wX-QKh" secondAttribute="bottom" constant="8" id="UQd-zQ-xoG"/>
                             <constraint firstItem="a7Q-aa-kep" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="VmY-A8-TYY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wYT-N2-sPY" secondAttribute="trailing" constant="60" id="Yzn-v0-2km"/>
@@ -96,7 +100,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+            <point key="canvasLocation" x="137.68115942028987" y="114.1304347826087"/>
         </scene>
         <!--Feed View Controller-->
         <scene sceneID="Wp8-wY-Wlb">
