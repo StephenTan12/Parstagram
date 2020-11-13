@@ -15,6 +15,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     var posts = [PFObject]()
     var refreshControl: UIRefreshControl!
+    var maxLoadedPosts = 20
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,9 +45,9 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let query = PFQuery(className: "Posts")
         
         query.includeKey("author")
-        
+    
         // getting the last twenty posts
-        query.limit = 20
+        query.limit = maxLoadedPosts
         
         query.findObjectsInBackground {(posts, error) in
             if posts != nil {
@@ -80,6 +81,13 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.photoView.af.setImage(withURL: url)
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row + 1 == posts.count {
+            maxLoadedPosts += 20
+            getPosts()
+        }
     }
     /*
     // MARK: - Navigation
