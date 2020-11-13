@@ -25,7 +25,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(onRefresh(_ :)), for: UIControl.Event.valueChanged)
-        tableView.insertSubview(refreshControl, at: 0)
+        tableView.refreshControl = refreshControl
     }
     
     override func viewDidAppear(_ animated: Bool) {
