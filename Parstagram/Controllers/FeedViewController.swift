@@ -35,6 +35,17 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         getPosts()
     }
     
+    @IBAction func onLogoutButton(_ sender: Any) {
+        PFUser.logOut()
+        
+        let main = UIStoryboard(name: "Main", bundle: nil)
+        let loginViewController = main.instantiateViewController(identifier: "LoginViewController")
+        
+        let sceneDelegate = self.view.window?.windowScene?.delegate as! SceneDelegate
+        
+        sceneDelegate.window?.rootViewController = loginViewController
+    }
+    
     @objc func onRefresh(_ refreshControl: UIRefreshControl) {
         getPosts()
         refreshControl.endRefreshing()
