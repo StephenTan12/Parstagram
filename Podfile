@@ -7,6 +7,7 @@ target 'Parstagram' do
 
   # Pods for Parstagram
   pod 'Parse'
+  pod 'MessageInputBar'
   pod 'AlamofireImage', '~> 4.1'
 
 end
